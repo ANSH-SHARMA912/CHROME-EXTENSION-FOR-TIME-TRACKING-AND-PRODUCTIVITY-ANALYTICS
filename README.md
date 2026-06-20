@@ -1,4 +1,4 @@
-# ⏱️ TimeTrack Pro - Chrome Extension for Time Tracking & Productivity Analytics
+#  TimeTrack Pro - Chrome Extension for Time Tracking & Productivity Analytics
 
 *COMPANY*: CODTECH IT SOLUTIONS
 *NAME*: ANSH SHARMA
@@ -15,7 +15,7 @@
 
 ---
 
-## 📣 About
+##  About
 
 TimeTrack Pro is a browser extension built to help users understand how they spend their time online.
 
@@ -45,12 +45,12 @@ Designed using **Chrome Extension APIs**, **Node.js**, **Express.js**, **MongoDB
 
 ### Chrome Extension
 
-* ⏱ Automatic website time tracking
-* 🌐 Detects active browser tabs
-* 📊 Tracks browsing duration in real-time
-* 🔄 Background monitoring
-* 💾 Stores browsing history securely
-* 🔐 User authentication support
+*  Automatic website time tracking
+*  Detects active browser tabs
+*  Tracks browsing duration in real-time
+*  Background monitoring
+*  Stores browsing history securely
+*  User authentication support
 
 ### Productivity Analytics
 
@@ -66,7 +66,7 @@ Designed using **Chrome Extension APIs**, **Node.js**, **Express.js**, **MongoDB
 
 The extension automatically categorizes websites.
 
-### ✅ Productive
+###  Productive
 
 * GitHub
 * LeetCode
@@ -76,14 +76,14 @@ The extension automatically categorizes websites.
 * Coursera
 * Udemy
 
-### ⚪ Neutral
+###  Neutral
 
 * Gmail
 * Google Docs
 * Google Drive
 * LinkedIn
 
-### ❌ Unproductive
+###  Unproductive
 
 * Instagram
 * Facebook
