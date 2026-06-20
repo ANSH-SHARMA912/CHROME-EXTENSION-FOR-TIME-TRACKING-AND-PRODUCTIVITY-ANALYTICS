@@ -9,7 +9,7 @@
 
 *OUTPUT*:
 
-![image align]()
+![image align](https://github.com/ANSH-SHARMA912/CHROME-EXTENSION-FOR-TIME-TRACKING-AND-PRODUCTIVITY-ANALYTICS/blob/41575fbe91053f77eb1815a3457ea6f436dcc539/Screenshot%202026-06-20%20163555.png)
 
 > A Chrome Extension that automatically tracks the time spent on different websites, classifies browsing activity, and provides insightful productivity analytics through a web dashboard.
 
