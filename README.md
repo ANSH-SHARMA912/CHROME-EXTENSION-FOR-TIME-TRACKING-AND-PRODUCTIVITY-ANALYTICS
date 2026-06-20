@@ -1,77 +1,320 @@
-<img src="docs/toggl-track-logo.svg" alt="Track Extension" width="400" height="auto">
+# ⏱️ TimeTrack Pro - Chrome Extension for Time Tracking & Productivity Analytics
 
-# Toggl Track browser extension integrations
+*COMPANY*: CODTECH IT SOLUTIONS
+*NAME*: ANSH SHARMA
+*INTERN ID*:CTIS6655
+*DOMAIN*: FULL STACK WEB DEVELOPMENT
+*DURATION*: 16 WEEKS
+*MENTOR*: NEELA SANTOSH
 
-## 📣 Toggl Button is now the Toggl Track browser extension!
-We not only renamed the extension, but we also made several changes to Track Extension's codebase to build a better foundation for the future and make it easier to contribute new integrations.
+*OUTPUT*:
 
-For more information, please check this [blogpost](https://toggl.com/blog/purposeful-open-source).
+![image align]()
+
+> A Chrome Extension that automatically tracks the time spent on different websites, classifies browsing activity, and provides insightful productivity analytics through a web dashboard.
 
 ---
 
-This is the repo for the browser extension's integrations.
+## 📣 About
 
-Start and stop the timer from the web tools you use daily. Get the time-tracking
-out of the way and focus on real work.
+TimeTrack Pro is a browser extension built to help users understand how they spend their time online.
 
-## Table of Contents
-- [How to use](#how-to-use)
-  - [Installing the extension](#installing-the-extension)
-  - [Using the extension](#using-the-extension)
-- [Add custom domains](#add-custom-domains)
-- [Supported services](#supported-services)
-- [Create new integrations](#create-new-integrations)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
-- [License](#license)
+The extension automatically tracks browsing sessions, categorizes websites as **Productive**, **Neutral**, or **Unproductive**, securely stores user activity in a backend database, and visualizes productivity insights through an interactive dashboard.
 
-## How to use
+Designed using **Chrome Extension APIs**, **Node.js**, **Express.js**, **MongoDB**, and **React.js**, the project demonstrates real-world browser extension development with backend integration and analytics.
 
-### Installing the extension
+---
 
-__Chrome__
-https://chrome.google.com/webstore/detail/toggl-button/oejgccbfbmkkpaidnkphaiaecficdnfn
+# Table of Contents
 
-__Firefox__
-https://addons.mozilla.org/en-US/firefox/addon/toggl-button-time-tracker/
+* [Features](#features)
+* [Technology Stack](#technology-stack)
+* [Installation](#installation)
+* [Using the Extension](#using-the-extension)
+* [Dashboard Analytics](#dashboard-analytics)
+* [Website Classification](#website-classification)
+* [Project Structure](#project-structure)
+* [Workflow](#workflow)
+* [Future Enhancements](#future-enhancements)
+* [Contributing](#contributing)
+* [License](#license)
 
-### Using the extension
+---
 
-1. Log in to your [Toggl Track](https://track.toggl.com/) account from the extension popup.
-2. Enable services that you want to use the browser extension with under Settings > Integrations.
-3. Navigate to your [service](#supported-services) and start your Toggl timer there.
+# Features
 
-Or start entry from the extension icon menu.
+### Chrome Extension
 
-3. To edit the running time entry:
-  - Edit entry details from the post start popup that is shown right after you click the "Start timer" button.
-  - Edit entry details from the extension icon menu by clicking the running time entry name.
+* ⏱ Automatic website time tracking
+* 🌐 Detects active browser tabs
+* 📊 Tracks browsing duration in real-time
+* 🔄 Background monitoring
+* 💾 Stores browsing history securely
+* 🔐 User authentication support
 
-4. To stop the current running timer:
-  - Press the button again.
-  - Stop the entry from the extension icon menu.
-  - Start another time entry inside your account.
+### Productivity Analytics
 
-## Supported services
+* Daily productivity summary
+* Weekly productivity reports
+* Total browsing time
+* Productive vs Unproductive comparison
+* Top visited websites
+* Category-wise analytics
+* Interactive charts and graphs
 
-For a list of supported services please refer to [integrations](docs/INTEGRATIONS.md)
+### Website Classification
 
-## Add custom domains
+The extension automatically categorizes websites.
 
-If one of the supported services that you use is hosted on a custom domain (e.g. https://yourcompany.github.com) you can define the custom domains in Settings > Integrations.
+### ✅ Productive
 
-## Create new integrations
+* GitHub
+* LeetCode
+* HackerRank
+* GeeksforGeeks
+* Stack Overflow
+* Coursera
+* Udemy
 
-Do you want to create a new custom integration, and maybe share it with the rest of the world? Check the [contributing section](#contributing) for more information.
+### ⚪ Neutral
 
-## Changelog
+* Gmail
+* Google Docs
+* Google Drive
+* LinkedIn
 
-A list of all the changes and added features can be found at http://toggl.github.io/track-extension.
+### ❌ Unproductive
 
-## Contributing
+* Instagram
+* Facebook
+* X (Twitter)
+* Netflix
+* Reddit
+* Snapchat
 
-Want to contribute? Great! Read up our guide for [creating integrations](docs/CREATING_INTEGRATIONS.md).
-It explains in detail how to create, debug, and test a new integration for the Toggl Track browser extension.
+Users can customize these categories according to their preferences.
 
-## License
-The Toggl Track browser extension extension is [Apache License 2.0](LICENSE)
+---
+
+# Technology Stack
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+
+### Chrome Extension
+
+* Manifest V3
+* Chrome Tabs API
+* Chrome Storage API
+* Chrome Runtime API
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+* Mongoose
+
+### Dashboard
+
+* React.js
+* Chart.js
+
+---
+
+# Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-username/timetrack-pro.git
+```
+
+## Install Backend
+
+```bash
+cd backend
+npm install
+```
+
+## Start Backend Server
+
+```bash
+npm start
+```
+
+## Run Dashboard
+
+```bash
+cd dashboard
+npm install
+npm start
+```
+
+## Load Chrome Extension
+
+1. Open **Google Chrome**
+2. Navigate to:
+
+```
+chrome://extensions
+```
+
+3. Enable **Developer Mode**
+4. Click **Load Unpacked**
+5. Select the **extension** folder
+
+The extension is now ready to use.
+
+---
+
+# Using the Extension
+
+1. Install the Chrome Extension.
+2. Create or log in to your account.
+3. Browse websites normally.
+4. The extension automatically tracks the active tab.
+5. Website activity is securely stored in the backend database.
+6. Open the analytics dashboard to view productivity insights.
+7. Check the weekly productivity report to monitor browsing habits.
+
+---
+
+# Dashboard Analytics
+
+The dashboard provides:
+
+* Total screen time
+* Productive browsing time
+* Unproductive browsing time
+* Daily activity summary
+* Weekly productivity report
+* Top visited websites
+* Website category distribution
+* Productivity score
+* Interactive charts
+
+---
+
+# Website Classification
+
+Every visited website is classified based on predefined categories.
+
+| Category     | Examples                    |
+| ------------ | --------------------------- |
+| Productive   | GitHub, LeetCode, Coursera  |
+| Neutral      | Gmail, Google Docs          |
+| Unproductive | Instagram, Facebook, Reddit |
+
+Users can update categories from the dashboard.
+
+---
+
+# Project Structure
+
+```text
+TimeTrack-Pro/
+
+├── extension/
+│   ├── manifest.json
+│   ├── background.js
+│   ├── popup.html
+│   ├── popup.js
+│   ├── popup.css
+│   └── icons/
+│
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   └── config/
+│
+├── dashboard/
+│   ├── public/
+│   └── src/
+│
+└── README.md
+```
+
+---
+
+# Workflow
+
+```
+User Opens Browser
+        │
+        ▼
+Extension Detects Active Tab
+        │
+        ▼
+Track Website Usage
+        │
+        ▼
+Categorize Website
+        │
+        ▼
+Store Data in MongoDB
+        │
+        ▼
+Generate Productivity Analytics
+        │
+        ▼
+Display Dashboard Reports
+```
+
+---
+
+# Weekly Productivity Report
+
+The application automatically generates a weekly report containing:
+
+* Total browsing time
+* Productive hours
+* Unproductive hours
+* Productivity percentage
+* Most visited websites
+* Daily activity breakdown
+* Website category distribution
+* Weekly productivity trend
+
+---
+
+# Future Enhancements
+
+* AI-powered productivity recommendations
+* Focus mode
+* Pomodoro timer integration
+* Website blocking
+* Goal tracking
+* Email productivity reports
+* Browser synchronization
+* Dark mode
+* Export analytics to PDF or CSV
+* Mobile companion application
+
+---
+
+# Contributing
+
+Contributions are welcome!
+
+If you'd like to improve the extension, fix bugs, or add new features:
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+# License
+
+This project is developed for educational purposes as part of the **Chrome Extension for Time Tracking and Productivity Analytics** assignment.
